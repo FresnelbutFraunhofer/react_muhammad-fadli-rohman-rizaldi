@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      table,
+      th,
+      tr,
+      td {
+        border: 2px solid;
+      }
+      tr {
+        transition: all 0.25s ease-in-out;
+      }
+      tr:hover {
+        background-color: #eee;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <nav
+        class="fixed-top shadow-sm navbar navbar-expand-lg bg-light pt-2 ps-4 pe-3"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link home active text-primary"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link feature" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pricing" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link FAQ" href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link about" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="container">
+      <div class="brand-product text-center">
+        <a class="brand" href="#">
+          <img
+            src="./bootstrap-logo-shadow.png"
+            alt="Bootstrap"
+            width="80"
+            height="70"
+          />
+        </a>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="head col-xl-10 col-lg-10 col-md-10 col-sm-10">
+          <h1>Create Product</h1>
+          <p>
+            Below is an example form built entirely with Bootstrap’s form
+            controls. Each required form group has a validation state that can
+            be triggered by attempting to submit the form without completing it.
+          </p>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="content col-xl-8 col-lg-8 col-md-8 col-sm-8">
+          <h2 class="mb-3">Detail Product</h2>
+          <form
+            id="form"
+            action="landingPage.html"
+            class="row g-3 needs-validation"
+          >
+            <div class="name-goods input-control mb-2">
+              <label for="pname" class="form-label">Product Name :</label><br />
+              <input
+                id="pname"
+                type="text"
+                class="form-control kolom product col-xl-6 col-lg-6 col-md-6 col-sm-6"
+                name="productname"
+                required
+              />
+              <div class="error"></div>
+            </div>
+            <br />
+            <div class="category input-control mb-2">
+              <label for="pcategory" class="form-label"
+                >Product Category :</label
+              ><br />
+              <select
+                id="goods"
+                name="pcategory"
+                class="kolom choose form-select col-xl-4 col-lg-4 col-md-4 col-sm-4"
+                required
+              >
+                <option selected disabled value=""></option>
+                <option value="Convenience">Convenience goods</option>
+                <option value="Shopping">Shopping goods</option>
+                <option value="Specialty">Specialty goods</option>
+                <option value="Unsought">Unsought goods</option>
+              </select>
+              <div class="error"></div>
+            </div>
+            <br />
+            <div class="file-goods input-control mb-2">
+              <label for="myfile">Image of Product </label><br />
+              <input
+                id="myfile"
+                type="file"
+                class="kolom form-control col-xl-6 col-lg-6 col-md-12 col-sm-12"
+                name="myfile"
+                required
+              />
+              <div class="error"></div>
+            </div>
+            <br />
+            <div class="freshness input-control mb-2">
+              <label for="freshness">Product Freshness :</label><br />
+              <div class="form-check">
+                <input
+                  id="validationFormCheck1"
+                  type="radio"
+                  class="form-check-input mt-2"
+                  value="brand new"
+                  name="radio-stacked"
+                  required
+                />
+                <label class="form-check-label mt-1" for="validationFormCheck1"
+                  >Brand New</label
+                ><br />
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input mt-2"
+                  id="validationFormCheck2"
+                  name="radio-stacked"
+                  value="second hank"
+                  required
+                />
+                <label class="form-check-label mt-1" for="validationFormCheck2"
+                  >Second Hank</label
+                ><br />
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input mt-2"
+                  id="validationFormCheck3"
+                  name="radio-stacked"
+                  value="refurbished"
+                  required
+                />
+                <label class="form-check-label mt-1" for="validationFormCheck3"
+                  >Refurbished</label
+                >
+              </div>
+              <div
+                id="error-msg"
+                class="error-msg mb-1"
+                style="color: #ff3860; font-size: 14px"
+              ></div>
+            </div>
+            <div class="description input-control">
+              <label for="desc">Additional Description:</label><br />
+              <textarea
+                id="descrip"
+                class="kolom form-control col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                name="desc"
+                rows="6"
+                required
+              ></textarea>
+              <div class="error"></div>
+            </div>
+            <div class="price input-control mb-2">
+              <label for="price">Product Price :</label><br />
+              <input
+                id="price"
+                type="number"
+                name="price"
+                class="kolom form-control col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                min="1"
+                max="1000000"
+                placeholder="Rp. 100000"
+                required
+              />
+              <div class="error"></div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  id="invalidCheck"
+                  name="validCheck"
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div
+                  id="feedback"
+                  style="color: #ff3860; font-size: 14px"
+                ></div>
+              </div>
+            </div>
+            <div class="text-center row mb-3">
+              <div class="col-2 col-sm-2"></div>
+              <div class="col-12">
+                <button
+                  class="btn btn-primary mt-5 col-8 col-sm-8"
+                  type="submit"
+                  id="button-submit"
+                  data-bs-toggle="modal"
+                  data-bs-target="#alert-success"
+                >
+                  Create Product
+                </button>
+              </div>
+              <div class="col-2 col-sm-2"></div>
+            </div>
+          </form>
+        </div>
+        <div class="col col-xl-2 col-lg-2 col-md-2 col-sm-2"></div>
+      </div>
+      <table id="table">
+        <tr>
+          <th>Product Name</th>
+          <th>Product Category</th>
+          <th>Image of Product</th>
+          <th>Product Freshness</th>
+          <th>Additional Description</th>
+          <th>Product Price</th>
+        </tr>
+      </table>
+      <button id="edit">Edit</button>
+      <button id="remove">Remove</button>
+    </section>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/data.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

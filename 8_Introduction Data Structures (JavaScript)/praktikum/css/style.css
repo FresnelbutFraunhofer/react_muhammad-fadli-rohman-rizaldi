@@ -1,0 +1,57 @@
+body {
+  font-family: "Jost", sans-serif;
+}
+.brand-product {
+  margin-top: 60px;
+}
+.home:hover,
+.feature:hover,
+.pricing:hover,
+.FAQ:hover,
+.about:hover {
+  border-radius: 10%;
+  background-color: #37517e;
+  color: white !important;
+  scroll-behavior: smooth;
+}
+.head {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2.3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content {
+  margin-top: 50px;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.product,
+.choose {
+  width: 50%;
+}
+@media (max-width: 575.98px) {
+  .kolom {
+    width: 100%;
+  }
+  #myfile {
+    padding: 0;
+  }
+}
+.input-control input:focus {
+  outline: 0;
+}
+.input-control.success input {
+  border-color: #09c372;
+}
+.input-control.error input,
+.input-control.error .choose,
+.input-control.error textarea {
+  border-color: #ff3860;
+}
+.input-control .error {
+  color: #ff3860;
+  font-size: 14px;
+}
