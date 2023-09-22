@@ -1,0 +1,574 @@
+:root {
+  --blue: #9ac1f0;
+  --greenblue: #72fa93;
+  --green: #a0e548;
+  --red: #e45f2b;
+  --orange: #f6c445;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  /* min-height: 4000px; */
+}
+
+.mynavbar {
+  background-color: rgba(240, 240, 240, 0.6) !important;
+  backdrop-filter: blur(0.5px);
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.welcome-page ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bali.jpg"); /* Gambar latar belakang pertama */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  transition: background-image 1s;
+  height: 100vh;
+}
+
+.welcome-page {
+  min-height: 100vh;
+  position: relative;
+  color: var(--red);
+}
+
+.welcome-page h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 4rem;
+  text-shadow: var(--shadow);
+}
+
+.welcome-page p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+}
+
+#logo-name {
+  font-family: "Sacramento", sans-serif;
+  font-weight: bold;
+}
+
+/* STYLING FORM */
+.form {
+  background-color: white;
+  font-family: "Jost", sans-serif;
+  border-radius: 10%;
+  width: 40rem;
+  height: 33rem;
+}
+
+.form p {
+  font-size: 1rem;
+}
+
+.form-floating label {
+  opacity: 5%;
+}
+
+.input-control.success input,
+.input-control.success select {
+  border-color: #09c372;
+}
+.input-control.error input,
+.input-control.error select {
+  border-color: #ff3860;
+}
+.error-form {
+  color: #ff3860;
+  font-size: 14px;
+}
+
+.price-list {
+  /* background-color: var(--blue); */
+  min-height: 100vh;
+}
+
+.blue-top {
+  background-color: var(--greenblue);
+  border-radius: 0 0 30% 30%;
+  height: 9.5rem;
+}
+
+.blue-top h1 {
+  text-align: center;
+  align-items: center;
+  padding-top: 4.5rem;
+  font-size: 3rem;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+.price-menu {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none;
+  white-space: nowrap;
+  padding: 10px;
+  gap: 15px;
+}
+
+.price-menu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.price-menu::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.gallery {
+  width: 15rem;
+  height: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  padding: 5px 5px 0 5px;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 1.5rem;
+}
+
+.gallery img {
+  margin-top: 10px;
+  width: 90%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10% 20%;
+}
+
+.gallery .name {
+  width: 100%;
+  font-size: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.star {
+  color: burlywood;
+  margin-bottom: 0;
+}
+
+.review {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-family: "Work Sans", sans-serif;
+  color: #000;
+}
+
+.destination {
+  margin: 0;
+  gap: 5px;
+}
+
+.destination p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.desc {
+  background-color: #a0e548;
+  box-shadow: var(--shadow);
+  border-radius: 15px 15px 15px 15px;
+  padding: 7px;
+  margin-left: auto;
+  text-align: center;
+  font-size: 12px;
+  width: 10rem;
+}
+
+.detail {
+  gap: 2rem;
+  justify-content: center;
+}
+
+.detail .nominal {
+  font-size: 12px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.nominal span {
+  font-size: 0.5rem;
+}
+
+.detail button {
+  font-size: 0.8rem;
+  font-family: "Jost", sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(48, 48, 220);
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 5rem;
+  height: 1.8rem;
+  color: white;
+}
+
+#contact {
+  background-color: var(--orange);
+  min-height: 100vh;
+}
+
+.design-1 {
+  background-color: var(--red);
+  border-radius: 0 0 0 60%;
+  height: 9rem;
+}
+
+.design-1 h1 {
+  padding-top: 4.5rem;
+  font-size: 3rem;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  height: auto;
+  margin-bottom: 1rem;
+  padding: 0 8px;
+}
+
+.baris {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card img {
+  height: 9.5rem;
+  border-radius: 0 0 8% 8%;
+}
+
+/* Clear floats */
+.container::after,
+.baris::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.container p {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.title {
+  color: grey;
+}
+
+.button-1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-1:hover {
+  background-color: #555;
+}
+
+/* FOOTER */
+.form-footer {
+  padding-bottom: 40px;
+}
+.form-section {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.form-section h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #37517e;
+}
+.desc-form {
+  color: black;
+  margin-bottom: 25px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+#subs {
+  width: 32%;
+  height: 2rem;
+  border-radius: 17px;
+  margin-top: 1px;
+  margin-right: 5px;
+  border: none;
+  color: azure;
+}
+.button {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 17px;
+  background-color: #47b2e4;
+  color: azure;
+  height: 2.2rem;
+  position: absolute;
+  padding-left: 12px;
+  padding-right: 12px;
+  z-index: 3;
+  right: 34.4%;
+  border: none;
+}
+.button:hover {
+  color: #37517e;
+}
+
+.info-1 h2 {
+  font-family: "Jost", sans-serif;
+  /* font-size: 1.3em; */
+  font-weight: bold;
+  color: var(--red);
+}
+.address-1 p {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+  line-height: 15px;
+}
+
+.address-2 a {
+  color: grey !important;
+  text-decoration: none !important;
+}
+
+.address-2 a:hover {
+  color: var(--greenblue) !important;
+}
+
+/* span {
+  font-weight: bold;
+} */
+.useful li,
+.services li {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 25px;
+  list-style: none;
+}
+.info-4 p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.info-2 h3,
+.info-3 h3,
+.info-4 h3 {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: var(--red);
+  margin-bottom: 14px;
+}
+.info-4 .round-group {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.round {
+  background-color: var(--red);
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.copyright {
+  background-color: #47b2e4;
+}
+.copyright h4,
+.copyright h5 {
+  color: #f3f5fa;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+}
+i {
+  font-weight: bold;
+}
+.copyright h5 {
+  justify-content: end !important;
+}
+.bootstrap {
+  color: white;
+}
+.bootstrap:hover {
+  color: #f3f5fa;
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+
+  .column {
+    width: 30%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767.98px) {
+  html {
+    font-size: 65%;
+  }
+
+  .column {
+    width: 30%;
+  }
+
+  .button {
+    font-size: 0.7rem;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 17px;
+    margin-top: 2rem;
+  }
+}
+
+/* Mobile Phone*/
+@media (max-width: 575.98px) {
+  html {
+    font-size: 55%;
+  }
+
+  .welcome-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form {
+    width: 35rem;
+  }
+
+  .price-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .gallery {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .gallery img {
+    margin-top: 10px;
+    width: 90%;
+    height: 7rem;
+  }
+
+  .gallery .name {
+    width: 100%;
+    font-size: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: justify;
+  }
+
+  .star svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .review {
+    font-size: 0.8rem;
+  }
+
+  .destination svg {
+    width: 1.5rem;
+    height: 1rem;
+  }
+
+  .destination p {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+
+  .desc {
+    font-size: 1rem;
+    width: 10rem;
+  }
+
+  .detail {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .detail .nominal {
+    font-size: 1rem;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .nominal span {
+    font-size: 0.5rem;
+  }
+
+  .detail button {
+    font-size: 0.8rem;
+    width: 5rem;
+    height: 1.8rem;
+  }
+
+  .baris {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column {
+    width: 55%;
+  }
+
+  .button {
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 17px;
+    margin-top: 0.7rem;
+    right: 34.4%;
+  }
+
+  .contain-foot {
+    margin: 0 auto;
+  }
+}
