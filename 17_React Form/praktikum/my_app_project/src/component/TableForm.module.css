@@ -1,0 +1,24 @@
+.producttable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.producttable th,
+.producttable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; 
+}
+
+.producttable th {
+  background-color: #f2f2f2;
+}
+
+.producttable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.producttable tbody tr:hover {
+  background-color: #ddd;
+}
