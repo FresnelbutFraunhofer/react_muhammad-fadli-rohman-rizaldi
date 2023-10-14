@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans&family=Roboto&display=swap);
+body {
+  font-family: "Jost", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation {
+  display: flex !important;
+  justify-content: end !important;
+}
+
+.brand-product {
+  margin-top: 60px;
+}
+.home:hover,
+.feature:hover,
+.pricing:hover,
+.FAQs:hover,
+.about:hover {
+  border-radius: 10%;
+  background-color: #37517e;
+  color: white !important;
+  scroll-behavior: smooth;
+}
+.head {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2.3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content {
+  margin-top: 50px;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.product,
+.choose {
+  width: 50%;
+}
+
+.submit {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.welcome {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-color: #37517e;
+}
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: azure;
+  font-family: "Jost", sans-serif;
+}
+.textwelcome {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: azure;
+  opacity: 0.5;
+}
+#image {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 100%;
+  height: auto;
+  width: 50%;
+  border-radius: 10%;
+}
+a {
+  text-decoration: none;
+  color: azure;
+  font-size: 14px;
+}
+a:hover {
+  color: #37517e;
+}
+.welcomelink {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.getlink {
+  font-weight: bold;
+  padding: 5px 20px;
+  margin-right: 30px;
+  background-color: #47b2e4;
+  border-radius: 30px;
+  font-family: "Jost", sans-serif;
+}
+.videolink {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+.videolink:hover {
+  font-family: "Open Sans", sans-serif;
+  color: #47b2e4;
+}
+
+/* STYLE FOOTER */
+.form {
+  background-color: #f3f5fa;
+  padding-bottom: 40px;
+  width: 100%;
+}
+.formsection {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.formsection h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #37517e;
+}
+.descform {
+  color: black;
+  margin-bottom: 25px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+#subs {
+  width: 32%;
+  height: 2rem;
+  border-radius: 17px;
+  margin-top: 1px;
+  margin-right: 5px;
+  border: none;
+  color: azure;
+}
+.button {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 17px;
+  background-color: #47b2e4;
+  color: azure;
+  height: 2.2rem;
+  position: absolute;
+  padding-left: 12px;
+  padding-right: 12px;
+  z-index: 3;
+  right: 34.4%;
+  border: none;
+}
+.button:hover {
+  color: #37517e;
+}
+
+#info1 h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #37517e;
+}
+.address1 p,
+.address2 p {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+}
+span {
+  font-weight: bold;
+}
+.useful li,
+.services li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+}
+.info-4 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+#info2 h3,
+#info3 h3,
+#info4 h3 {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #37517e;
+  margin-bottom: 14px;
+}
+#info4 .roundgroup {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.round {
+  background-color: #47b2e4;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+#copyright {
+  background-color: #37517e;
+}
+#copyright h4,
+#copyright h5 {
+  color: #f3f5fa;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+i {
+  font-weight: bold;
+}
+#copyright h5 {
+  justify-content: end !important;
+}
+.bootstrap {
+  color: #47b2e4;
+}
+.bootstrap:hover {
+  color: #f3f5fa;
+}
+
+/*Styling for TableForm*/
+.button-red {
+  background-color: #ff0000; /* Warna latar belakang merah */
+  color: #ffffff; /* Warna teks putih */
+  border: none; /* Hilangkan garis batas */
+  padding: 5px 10px; /* Spasi dalam tombol */
+  border-radius: 5px; /* Sudut bulat */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-red:hover {
+  background-color: #ff5555; /* Warna latar belakang merah yang lebih terang saat dihover */
+}
+
+.button-red:active {
+  background-color: #cc0000; /* Warna latar belakang merah yang lebih gelap saat diklik */
+}
+
+.button-green {
+  background-color: #09c372; /* Warna latar belakang merah */
+  color: #ffffff; /* Warna teks putih */
+  border: none; /* Hilangkan garis batas */
+  padding: 5px 10px; /* Spasi dalam tombol */
+  border-radius: 5px; /* Sudut bulat */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-green:hover {
+  background-color: #ff5555; /* Warna latar belakang merah yang lebih terang saat dihover */
+}
+
+.button-green:active {
+  background-color: #cc0000; /* Warna latar belakang merah yang lebih gelap saat diklik */
+}
+
+@media (max-width: 768px) {
+  .button-red {
+    padding: 8px 16px; /* Atur spasi lebih kecil */
+    font-size: 14px; /* Atur ukuran teks lebih kecil */
+  }
+  .button-green {
+    padding: 8px 16px; /* Atur spasi lebih kecil */
+    font-size: 14px; /* Atur ukuran teks lebih kecil */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .title {
+    font-size: 2rem;
+  }
+  #image {
+    max-width: 100%;
+    height: auto;
+    width: 70%;
+  }
+  #foot {
+    text-align: center !important;
+  }
+  .roundgroup {
+    justify-content: center;
+    align-items: center;
+  }
+  .textwelcome {
+    text-align: center;
+  }
+  #copyright h4,
+  #copyright h5,
+  #copyright h5 > a {
+    font-size: 0.7rem;
+  }
+
+  .kolom {
+    width: 100%;
+  }
+  #myfile {
+    padding: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .textwelcome p {
+    font-size: 1rem;
+  }
+  #address1 p,
+  #address2 p {
+    font-size: 0.6rem;
+  }
+  #info2,
+  #info3 {
+    margin-left: 1.2rem;
+    margin-right: 1rem;
+  }
+  #copyright h4,
+  #copyright h5,
+  #copyright h5 > a {
+    font-size: 0.7rem;
+  }
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+.input-control.success input {
+  border-color: #09c372;
+}
+.input-control.error input,
+.input-control.error .choose,
+.input-control.error textarea {
+  border-color: #ff3860;
+}
+.input-control .error {
+  color: #ff3860;
+  font-size: 14px;
+}
+
+/* LOGIN */
+.contain {
+  background-color: #f0f0f0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  text-align: center;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.user-login {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: beige;
+}
+
+.user-login p {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.form-group {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.login {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #0056b3;
+}
+
+/*Table*/
+.table {
+  background-color: #fff;
+  padding: 20px 30px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Update*/
+.update {
+  background-color: #fff;
+  padding: 15px 0px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
