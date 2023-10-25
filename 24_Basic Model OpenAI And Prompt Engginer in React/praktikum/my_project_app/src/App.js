@@ -5,7 +5,7 @@ import { OpenAI } from "openai";
 
 function App() {
   const openai = new OpenAI({
-    apiKey: "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",
+    apiKey: "",
     dangerouslyAllowBrowser: true,
   });
   const [prompt, setPrompt] = useState("");
