@@ -1,11 +1,9 @@
-// import logo from "./logo.svg";
-// import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import { OpenAI } from "openai";
 
-function App() {
+export default function AIRecommedation() {
   const openai = new OpenAI({
-    apiKey: "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",
+    apiKey: "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",
     dangerouslyAllowBrowser: true,
   });
   const [prompt, setPrompt] = useState("");
@@ -18,8 +16,7 @@ function App() {
       const resp = await openai.completions.create({
         model: "text-davinci-003",
         prompt:
-          "You will be provided with statements, and your task is to convert them to standard English." +
-          prompt,
+          "Suggest a movie recommendation for someone who enjoys." + prompt,
         // messages: [],
         temperature: 0,
         max_tokens: 100,
@@ -34,7 +31,7 @@ function App() {
   return (
     <main className="main">
       <div className="contain w-2/4 mx-auto">
-        <h1>Grammar Correction</h1>
+        <h1>AI Recommendation</h1>
         <textarea
           type="text"
           value={prompt}
@@ -43,18 +40,24 @@ function App() {
           className="textarea"
         ></textarea>
 
-        <button
-          onClick={handleClick}
-          disabled={loading || prompt.length === 0}
-          className="btn"
-        >
-          {loading ? "Generating..." : "Generate"}
-        </button>
-        <p className="result">ChatGPT : {result}</p>
+        <div className="row ms-2 mb-3">
+          <button
+            onClick={handleClick}
+            disabled={loading || prompt.length === 0}
+            className="btn ai-button btn-confirm-payment rounded-pill fw-medium text-white border-0 text-lg col-3 col-lg-4 me-3"
+          >
+            {loading ? "Generating..." : "Generate"}
+          </button>
+          <a
+            className="btn ai-button btn-confirm-payment rounded-pill fw-medium text-white border-0 text-lg col-5 col-lg-5 "
+            href="/"
+            role="button"
+          >
+            To Dashboard
+          </a>
+        </div>
+        <p className="result ms-2">ChatGPT : {result}</p>
       </div>
     </main>
   );
 }
-
-export default App;
-

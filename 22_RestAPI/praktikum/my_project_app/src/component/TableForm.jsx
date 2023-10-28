@@ -12,7 +12,7 @@ function TableForm() {
     data: blog,
     error,
     isLoading,
-  } = useFetch("https://6517b49b582f58d62d351486.mockapi.io/products");
+  } = useFetch("https://6538fbf8a543859d1bb24f4e.mockapi.io/products");
 
   // const [confirmDelete, setConfirmDelete] = useState(null);
 
@@ -78,7 +78,7 @@ function TableForm() {
                         className="button-red"
                         onClick={() => {
                           fetch(
-                            "https://6517b49b582f58d62d351486.mockapi.io/products/" +
+                            "https://6538fbf8a543859d1bb24f4e.mockapi.io/products/" +
                               product.id,
                             {
                               method: "DELETE",

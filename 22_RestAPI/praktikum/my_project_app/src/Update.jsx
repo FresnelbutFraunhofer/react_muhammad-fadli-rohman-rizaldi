@@ -38,7 +38,7 @@ function Update() {
   const handleUpdate = (event) => {
     event.preventDefault();
     axios
-      .put("https://6517b49b582f58d62d351486.mockapi.io/products/" + id, data)
+      .put("https://6538fbf8a543859d1bb24f4e.mockapi.io/products/" + id, data)
       .then((res) => {
         console.log(res.data);
         nav("/account");

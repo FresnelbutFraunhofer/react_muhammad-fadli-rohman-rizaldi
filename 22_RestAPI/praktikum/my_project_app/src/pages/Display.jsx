@@ -9,7 +9,7 @@ function Display() {
     data: blog,
     error,
     isLoading,
-  } = useFetch("https://6517b49b582f58d62d351486.mockapi.io/products/" + id);
+  } = useFetch("https://6538fbf8a543859d1bb24f4e.mockapi.io/products/" + id);
   // const nav = useNavigate();
 
   // const sentence = `;

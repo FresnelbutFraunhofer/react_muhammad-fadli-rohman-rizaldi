@@ -1,0 +1,32 @@
+{
+  "name": "my_next_tix",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start:server": "json-server --watch ./server/db.json --port 3366",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.12.0",
+    "add": "^2.0.6",
+    "aos": "^2.3.4",
+    "axios": "^1.5.1",
+    "cloudinary": "^1.41.0",
+    "json-server": "^0.17.4",
+    "next": "13.5.6",
+    "openai": "^4.14.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}

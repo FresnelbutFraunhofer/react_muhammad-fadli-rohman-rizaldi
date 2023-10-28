@@ -1,0 +1,67 @@
+.contain {
+  background-color: bisque;
+  width: 100%;
+  margin: 0;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.update input[type="number"] {
+  max-width: 55px;
+  max-height: 50px;
+  /* border: 1px solid #0c145a; */
+  border: none;
+  padding: 0.75rem 1.2rem;
+  color: #0c145a;
+}
+
+.update input[type="number"]::-webkit-inner-spin-button,
+.update input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Menghilangkan margin */
+}
+
+.update input[type="text"] {
+  max-width: 437px;
+  border: 1px solid #0c145a;
+  padding: 0.75rem 1.625rem;
+  color: #0c145a;
+}
+
+.update input[type="text"]:focus-within {
+  color: #0c145a;
+}
+
+.update input[type="text"]::placeholder {
+  color: #ccd0dd;
+}
+
+.update .file-card {
+  transition: all 0.1s linear;
+  background-color: #f9faff;
+  border-radius: 1.625rem;
+  padding: 1.875rem;
+  cursor: pointer;
+}
+
+.update input[type="radio"]:checked + .file-card {
+  border: 2px solid #00baff;
+  background-color: rgba(0, 186, 255, 0.05);
+}
+
+.update .file-card #check {
+  transition: all 0.1s linear;
+  opacity: 0;
+}
+
+.update input[type="radio"]:checked + .file-card #check {
+  opacity: 1;
+}
+
+.update .button {
+  background-color: #4d17e2;
+  padding: 0.75rem 3rem;
+}

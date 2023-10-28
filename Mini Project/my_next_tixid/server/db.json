@@ -1,0 +1,125 @@
+{
+  "nominals": [
+    {
+      "id": 121,
+      "price": 30000,
+      "type": "Premium"
+    },
+    {
+      "id": 122,
+      "price": 50000,
+      "type": "Business"
+    },
+    {
+      "id": 123,
+      "price": 75000,
+      "type": "Luxury"
+    }
+  ],
+  "payments": [
+    {
+      "id": 131,
+      "payment": "Transfer",
+      "type": "BCA",
+      "noRekening": 1274849903
+    },
+    {
+      "id": 132,
+      "payment": "Transfer",
+      "type": "Mandiri",
+      "noRekening": 7789649288
+    },
+    {
+      "id": 133,
+      "payment": "VISA",
+      "type": "Credit Cards",
+      "noRekening": 32876498938
+    }
+  ],
+  "datacheckout": [
+    {
+      "timeItems": {
+        "id": 112,
+        "time": "19.00",
+        "duration": "19.00 - 20.40"
+      },
+      "nominalItems": {
+        "id": 122,
+        "price": 50000,
+        "type": "Business"
+      },
+      "paymentItems": {
+        "id": 132,
+        "payment": "Transfer",
+        "type": "Mandiri",
+        "noRekening": 7789649288
+      },
+      "total": 3,
+      "bankAccount": "Muhammad Farhan",
+      "dataFilm": {
+        "name": "AIR MATA DI UJUNG SAJADAH",
+        "genre": "Drama",
+        "description": "Tujuh tahun berlalu, Aqilla (Titi Kamal) baru mengetahui bahwa anaknya yakni Baskara (Faqih Alaydrus), ternyata masih hidup dan diasuh oleh Arif (Fedi Nuril) dan Yumna (Citra Kirana), pasangan yang hanya memiliki satu harapan: memiliki seorang anak. Aqilla bertolak dari kehidupannya yang hampa di Eropa menuju Kota Solo untuk menjemput masa depan barunya.\n\nAkankah Aqilla tega merenggut Baskara yang sudah dibesarkan oleh Arif dan Yumna selama bertahun-tahun? Memang darah dan daging Aqilla ada dalam diri Baskara, namun di sana juga ada keringat dan airmata Yumna. Siapakah yang lebih berhak menjadi ibu dari Baskara?",
+        "id": "4",
+        "image": ""
+      },
+      "id": 1
+    },
+    {
+      "timeItems": {
+        "id": 111,
+        "time": "11.00",
+        "duration": "11.00 - 12.40"
+      },
+      "nominalItems": {
+        "id": 122,
+        "price": 50000,
+        "type": "Business"
+      },
+      "paymentItems": {
+        "id": 131,
+        "payment": "Transfer",
+        "type": "BCA",
+        "noRekening": 1274849903
+      },
+      "total": 1,
+      "bankAccount": "Mariska Sugiono",
+      "dataFilm": {
+        "name": "DI AMBANG KEMATIAN",
+        "genre": "Horror",
+        "description": "Paska kematian ibunya yang tragis, Nadia (Taskya Namya) mengetahui bahwa ayahnya (Rifnu Wikana) terlanjur melakukan pesugihan yang menuntut nyawa manusia. Demi mencegah kematian berikutnya, Nadia, kakaknya Yoga (Wafda) dan sang ayah menempuh ritual-ritual khusus. Namun, Iblis di balik pesugihan itu tetap terus mengintai. Membuat Nadia dan keluarganya hidup bagai di ambang kematian.",
+        "id": "2",
+        "image": ""
+      },
+      "id": 2
+    },
+    {
+      "timeItems": {
+        "id": 112,
+        "time": "19.00",
+        "duration": "19.00 - 20.40"
+      },
+      "nominalItems": {
+        "id": 122,
+        "price": 50000,
+        "type": "Business"
+      },
+      "paymentItems": {
+        "id": 132,
+        "payment": "Transfer",
+        "type": "Mandiri",
+        "noRekening": 7789649288
+      },
+      "total": 2,
+      "bankAccount": "Muhammad Anang",
+      "dataFilm": {
+        "name": "PETUALANGAN SHERINA 2",
+        "genre": "Comedy",
+        "description": "SHERINA (Sherina Munaf) dan SADAM (Derby Romero), dua teman kecil yang lama terpisah, bertemu kembali di Kalimantan untuk pelepasliaran orang utan. Reuni manis terhenti ketika anak orang utan bernama SAYU dicuri sekelompok orang.\n\nSherina dan Sadam harus berusaha menemukan kembali kebersamaan, demi menyelamatkan Sayu dan juga kelangsungan persahabatan mereka yang baru saja tumbuh kembali. Sebuah sekuel dari film legendaris, bernuansa musikal dengan sentuhan aksi petualangan.",
+        "id": "3",
+        "image": "https://res.cloudinary.com/dinkt3eoc/image/upload/v1698495547/deu7w7phdqf8b4cbkjj7.jpg"
+      },
+      "id": 3
+    }
+  ]
+}
