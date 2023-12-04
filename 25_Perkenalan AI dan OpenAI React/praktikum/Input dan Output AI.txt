@@ -1,0 +1,7 @@
+INPUT:
+[User]
+I are wanting to goes to the store after she are finishes her homework
+
+OUTPUT:
+[Grammar Correction/System]
+I want to go to the store after she finishes her homework
